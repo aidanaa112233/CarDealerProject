@@ -1,8 +1,26 @@
 [
     {
         "id": 1,
-        "name": "BMV",
-        "price": 50000.0,
+        "name": "BMW X5",
+        "price": 50000,
         "quantity": 2
+    },
+    {
+        "id": 2,
+        "name": "Tesla Model 3",
+        "price": 42000,
+        "quantity": 3
+    },
+    {
+        "id": 3,
+        "name": "Toyota Camry",
+        "price": 28000,
+        "quantity": 5
+    },
+    {
+        "id": 4,
+        "name": "Mercedes Benz",
+        "price": 60000,
+        "quantity": 1
     }
 ]
