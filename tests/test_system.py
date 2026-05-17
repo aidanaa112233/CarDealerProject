@@ -6,13 +6,14 @@ from utils.validators import validate_product_name
 
 
 class TestInventorySystem(unittest.TestCase):
+    """Unit tests for Car Dealer Management System."""
 
     def setUp(self):
 
         self.product = Product(
             1,
-            "Laptop",
-            1000,
+            "BMW X5",
+            50000,
             2
         )
 
@@ -22,14 +23,14 @@ class TestInventorySystem(unittest.TestCase):
 
         self.assertEqual(
             self.product.get_name(),
-            "Laptop"
+            "BMW X5"
         )
 
     def test_total_value(self):
 
         self.assertEqual(
             self.product.total_value(),
-            2000
+            100000
         )
 
     def test_add_product(self):
@@ -44,7 +45,7 @@ class TestInventorySystem(unittest.TestCase):
     def test_validation_true(self):
 
         self.assertTrue(
-            validate_product_name("Phone")
+            validate_product_name("Toyota Camry")
         )
 
     def test_validation_false(self):
